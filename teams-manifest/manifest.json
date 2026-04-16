@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "1642258c-121b-45a9-bab1-9cbb58085a72",
+  "packageName": "com.tuempresa.sample-tracker",
+  "developer": {
+    "name": "Tu Empresa",
+    "websiteUrl": "https://tuempresa.com",
+    "privacyUrl": "https://tuempresa.com/privacy",
+    "termsOfUseUrl": "https://tuempresa.com/terms"
+  },
+  "name": {
+    "short": "Control Análisis",
+    "full": "Control de Tiempos de Análisis de Muestras"
+  },
+  "description": {
+    "short": "Registra y hace seguimiento al tiempo de análisis de muestras.",
+    "full": "Aplicación para registrar la entrega y cierre de análisis de muestras en el laboratorio, con seguimiento de tiempos por orden de producción y lote."
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#00e5b0",
+  "staticTabs": [
+    {
+      "entityId": "index",
+      "name": "Control de Análisis",
+      "contentUrl": "https://TU-DOMINIO-DE-DEPLOY/",
+      "scopes": ["personal", "team"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["TU-DOMINIO-DE-DEPLOY"]
+}
